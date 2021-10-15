@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntSelectTest", "AntSelectTest.csproj", "{2AD35A46-2B76-4E9A-922D-F4EBAFC31BCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AD35A46-2B76-4E9A-922D-F4EBAFC31BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD35A46-2B76-4E9A-922D-F4EBAFC31BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD35A46-2B76-4E9A-922D-F4EBAFC31BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD35A46-2B76-4E9A-922D-F4EBAFC31BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EDE7BD4-ACDA-4C92-B173-1DBDA425FDD2}
+	EndGlobalSection
+EndGlobal

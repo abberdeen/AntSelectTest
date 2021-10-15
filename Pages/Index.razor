@@ -1,0 +1,40 @@
+﻿@page "/" 
+
+<h1>Select Test</h1>
+
+
+<Select DataSource="@AuditTypes"
+        @bind-Value="@_auditTypeId"
+        ValueName="@nameof(GroupListItem.Value)"
+        LabelName="@nameof(GroupListItem.Name)"
+        GroupName="@nameof(GroupListItem.Group)"
+        SortByLabel="@SortDirection.Ascending"
+        SortByGroup="@SortDirection.Ascending"
+        Placeholder="Select audit type"
+        Size="small">
+</Select>
+
+@code
+{
+    private List<GroupListItem> AuditTypes { get; set; } = new();
+
+    private int _auditTypeId { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            AuditTypes  = new() { new() { Value = 0, Name = "Test 1", Group = "Test" } ,
+                new() { Value = 1, Name = "Test 2", Group = "Test" } };
+
+            StateHasChanged();
+        }
+    }
+
+    public class GroupListItem
+    {
+        public int Value { get; set; }
+        public string Name { get; set; }
+        public string Group { get; set; }
+    }
+}
